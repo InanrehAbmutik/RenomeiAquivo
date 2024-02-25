@@ -51,13 +51,15 @@ namespace RenomeiAquivo
                         File.Move(arquivo, novoCaminho);
 
                         // Exibe uma mensagem de confirmação
-                        MessageBox.Show($"Arquivo renomeado: {nomeArquivo} -> {novoNome}", "Renomear Arquivo");
+                        
                     }
                     else
                     {
                         MessageBox.Show($"O arquivo '{nomeArquivo}' não foi renomeado, pois não tem pelo menos 3 caracteres.", "Renomear Arquivo");
                     }
+                   
                 }
+                MessageBox.Show($"Arquivos renomeados com Sucesso");
             }
             else
             {
